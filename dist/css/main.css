@@ -1,0 +1,132 @@
+* {
+  font-family: 'Varela Round', sans-serif; }
+
+body {
+  background-image: url("cloud_bg3.jpg");
+  background-repeat: no-repeat;
+  margin: 0; }
+
+h3 {
+  text-align: center;
+  color: #783a9c;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
+.toggleBox {
+  margin: auto;
+  text-align: center; }
+
+label {
+  color: #783a9c; }
+
+.toggle {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px; }
+  .toggle label {
+    display: inline; }
+
+input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+  input:checked + .slider {
+    background-color: #ff9178; }
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3; }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background-color: #783a9c; }
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #783a9c;
+  -webkit-transition: .4s;
+  transition: .4s; }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #ff9178;
+    -webkit-transition: .4s;
+    transition: .4s; }
+
+.round {
+  border-radius: 34px; }
+  .round:before {
+    border-radius: 50%; }
+
+hr {
+  width: 70%; }
+
+.mainContainer {
+  width: 1000px;
+  margin: 0 auto; }
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 2px;
+  align-items: center;
+  height: 400px; }
+
+.card {
+  background-color: #ff9178;
+  color: #783a9c;
+  display: inline-block;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  height: 80%;
+  box-shadow: black 0px 1px 1px; }
+  .card p, .card h2 {
+    text-align: center;
+    font-size: 1.1rem; }
+  .card button {
+    width: 70%;
+    height: 30px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    color: #783a9c;
+    border: 1px solid black;
+    background-color: #ff9178; }
+    .card button:hover {
+      cursor: pointer;
+      background-color: #ff9178;
+      color: #783a9c; }
+
+#bottom {
+  background-color: #783a9c;
+  color: #ff9178;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px;
+  height: 157px; }
+
+@media (min-width: 636px) and (max-width: 1050px) {
+  .mainContainer {
+    width: 600px; }
+  .cardContainer {
+    height: 800px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-column-gap: 20px; } }
+
+@media (min-width: 360px) and (max-width: 636px) {
+  .mainContainer {
+    width: 300px; }
+  .cardContainer {
+    height: 1600px;
+    grid-template-columns: auto; } }
