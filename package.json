@@ -1,7 +1,7 @@
 {
   "name": "price",
   "version": "1.0.0",
-  "description": "",
+  "description": "A sucessful challenge attempt with jquery and sass.",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
@@ -11,5 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rypark91/Pricing-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rypark91/Pricing-Page/issues"
+  },
+  "homepage": "https://github.com/rypark91/Pricing-Page#readme"
 }

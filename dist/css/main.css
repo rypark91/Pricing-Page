@@ -77,7 +77,7 @@ hr {
 
 .cardContainer {
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 24% 24% 24% 24%;
   grid-column-gap: 2px;
   align-items: center;
   height: 400px; }
@@ -120,7 +120,7 @@ hr {
     width: 600px; }
   .cardContainer {
     height: 800px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 48% 48%;
     grid-template-rows: auto auto;
     grid-column-gap: 20px; } }
 
